@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./assets/fonts/DMSans-Regular.ttf') format('truetype'); /* Подключение пользовательского шрифта DM Sans */
+}
+
+body {
+    margin: 0; /* Убирает отступы по умолчанию */
+    font-family: 'DM Sans', sans-serif; /* Устанавливает основной шрифт страницы */
+    background-color: #f9f9f9; /* Устанавливает цвет фона страницы */
+    color: #333; /* Устанавливает цвет текста */
+}
+
+.container {
+    width: 80%; /* Ограничивает ширину основного содержимого */
+    margin: 0 auto; /* Центрирует содержимое на странице */
+    padding: 20px; /* Добавляет внутренние отступы */
+}
+
+header {
+    display: flex; /* Устанавливает флексбокс для выравнивания элементов */
+    justify-content: space-between; /* Размещает элементы по краям */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    margin-bottom: 40px; /* Добавляет отступ снизу */
+}
+
+h1 {
+    font-size: 2rem; /* Устанавливает размер шрифта для заголовка */
+}
+
+button {
+    background: transparent; /* Прозрачный фон кнопки */
+    border: 1px solid #333; /* Чёрная рамка */
+    padding: 10px 20px; /* Добавляет внутренние отступы */
+    cursor: pointer; /* Меняет курсор на указатель при наведении */
+    font-size: 1rem; /* Устанавливает размер шрифта */
+    transition: background 0.3s; /* Добавляет плавный переход при изменении фона */
+}
+
+button:hover {
+    background: #333; /* Задаёт тёмный фон при наведении */
+    color: #fff; /* Меняет цвет текста на белый при наведении */
+}
+
+main {
+    display: grid; /* Устанавливает сетку для карточек */
+    grid-template-columns: repeat(2, 1fr); /* Создаёт две колонки одинаковой ширины */
+    gap: 20px; /* Добавляет промежутки между карточками */
+}
+
+.card {
+    padding: 20px; /* Внутренние отступы внутри карточки */
+    border-radius: 10px; /* Скругляет углы карточки */
+    transition: box-shadow 0.3s; /* Добавляет плавный переход для тени */
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Тень при наведении на карточку */
+}
+
+.card .title {
+    font-size: 1.25rem; /* Размер текста для заголовка карточки */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.card .description {
+    font-size: 1rem; /* Размер текста для описания */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+.card button {
+    background: #fff; /* Белый фон кнопки внутри карточки */
+    border: 1px solid #333; /* Чёрная рамка кнопки */
+}
+
+.card-blue {
+    background-color: #4a4aff; /* Синий фон для карточки */
+    color: #fff; /* Белый текст */
+}
+
+.card-image {
+    background-size: cover; /* Устанавливает масштабирование фона */
+    background-position: center; /* Центрирует фоновое изображение */
+    height: 150px; /* Высота карточки с изображением */
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    font-family: "DM Sans", serif;
+    font-optical-sizing: auto;
+    font-weight:  ;
+    font-style: normal;
+} */
